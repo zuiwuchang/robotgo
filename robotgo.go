@@ -31,6 +31,11 @@ import (
 	"github.com/vcaesar/tt"
 )
 
+// MilliSleep sleep tm milli second
+func MilliSleep(tm int) {
+	time.Sleep(time.Duration(tm) * time.Millisecond)
+}
+
 // Sleep time.Sleep tm second
 func Sleep(tm int) {
 	time.Sleep(time.Duration(tm) * time.Second)
@@ -431,7 +436,9 @@ func UnicodeType(str uint32) {
 	cstr := C.uint(str)
 	C.unicodeType(cstr)
 }
-
+func ToUC(text string) []string {
+	return toUC(text)
+}
 func toUC(text string) []string {
 	var uc []string
 
