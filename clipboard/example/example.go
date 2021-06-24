@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/go-vgo/robotgo/clipboard"
+	"github.com/zuiwuchang/robotgo/clipboard"
 )
 
 func main() {

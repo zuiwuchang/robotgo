@@ -26,7 +26,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/go-vgo/robotgo/clipboard"
+	"github.com/zuiwuchang/robotgo/clipboard"
 
 	"github.com/vcaesar/tt"
 )
@@ -275,7 +275,7 @@ func SetMouseDelay(delay int) {
 // KeyTap tap the keyboard code;
 //
 // See keys:
-//	https://github.com/go-vgo/robotgo/blob/master/docs/keys.md
+//	https://github.com/zuiwuchang/robotgo/blob/master/docs/keys.md
 //
 func KeyTap(tapKey string, args ...interface{}) string {
 	var (
@@ -356,7 +356,7 @@ func KeyTap(tapKey string, args ...interface{}) string {
 // KeyToggle toggle the keyboard
 //
 // See keys:
-//	https://github.com/go-vgo/robotgo/blob/master/docs/keys.md
+//	https://github.com/zuiwuchang/robotgo/blob/master/docs/keys.md
 //
 func KeyToggle(key string, args ...string) string {
 	ckey := C.CString(key)
